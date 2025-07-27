@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="mod-menu-container">
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="mod-menu" id="modMenu">
+            <div class="menu-header">
+                <h2>NGUYỄN BÁ LUẬT</h2>
+                <button class="close-btn" id="closeBtn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <div class="menu-content">
+                <div class="functions-grid">
+                    <div class="function-item">
+                        <button class="function-btn" data-function="aimbot">
+                            <i class="fas fa-crosshairs"></i>
+                            <span>Aimbot</span>
+                        </button>
+                        <div class="status-indicator"></div>
+                    </div>
+
+                    <div class="function-item">
+                        <button class="function-btn" data-function="wallhack">
+                            <i class="fas fa-eye"></i>
+                            <span>Wallhack</span>
+                        </button>
+                        <div class="status-indicator"></div>
+                    </div>
+
+                    <div class="function-item">
+                        <button class="function-btn" data-function="speedhack">
+                            <i class="fas fa-bolt"></i>
+                            <span>Speed Hack</span>
+                        </button>
+                        <div class="status-indicator"></div>
+                    </div>
+
+                    <div class="function-item">
+                        <button class="function-btn" data-function="noclip">
+                            <i class="fas fa-ghost"></i>
+                            <span>No Clip</span>
+                        </button>
+                        <div class="status-indicator"></div>
+                    </div>
+
+                    <div class="function-item">
+                        <button class="function-btn" data-function="godmode">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>God Mode</span>
+                        </button>
+                        <div class="status-indicator"></div>
+                    </div>
+
+                    <div class="function-item">
+                        <button class="function-btn" data-function="fly">
+                            <i class="fas fa-plane"></i>
+                            <span>Fly Mode</span>
+                        </button>
+                        <div class="status-indicator"></div>
+                    </div>
+
+                    <div class="function-item">
+                        <button class="function-btn" data-function="teleport">
+                            <i class="fas fa-location-arrow"></i>
+                            <span>Teleport</span>
+                        </button>
+                        <div class="status-indicator"></div>
+                    </div>
+
+                    <div class="function-item">
+                        <button class="function-btn" data-function="esp">
+                            <i class="fas fa-search"></i>
+                            <span>ESP</span>
+                        </button>
+                        <div class="status-indicator"></div>
+                    </div>
+
+                    <div class="function-item">
+                        <button class="function-btn" data-function="radar">
+                            <i class="fas fa-satellite-dish"></i>
+                            <span>Radar</span>
+                        </button>
+                        <div class="status-indicator"></div>
+                    </div>
+
+                    <div class="function-item">
+                        <button class="function-btn" data-function="antikick">
+                            <i class="fas fa-ban"></i>
+                            <span>Anti-Kick</span>
+                        </button>
+                        <div class="status-indicator"></div>
+                    </div>
+                </div>
+                <div class="settings-panel">
+                    <h3>Settings</h3>
+                    <div class="setting-item">
+                        <label>Menu Opacity</label>
+                        <input type="range" id="opacitySlider" min="0.3" max="1" step="0.1" value="0.95">
+                    </div>
+                    <div class="setting-item">
+                        <label>Theme</label>
+                        <select id="themeSelect">
+                            <option value="dark">Dark Red</option>
+                            <option value="blue">Dark Blue</option>
+                            <option value="green">Dark Green</option>
+                        </select>
+                    </div>
+                    <div class="setting-item">
+                        <label>Sound Effects</label>
+                        <button class="toggle-btn" id="soundToggle">
+                            <span class="toggle-text">ON</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="shortcuts-info">
+                    <h4>Keyboard Shortcuts</h4>
+                    <div class="shortcut-list">
+                        <div class="shortcut"><kbd>Insert</kbd> - Toggle Menu</div>
+                        <div class="shortcut"><kbd>F1-F10</kbd> - Toggle Functions</div>
+                        <div class="shortcut"><kbd>Esc</kbd> - Close Menu</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
